@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
+<html lang="id">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>{{ html.title }}</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <link rel="stylesheet" href="assets/css/fonts.css">
+        <link rel="stylesheet" href="assets/css/main.css">
+    </head>
+    <body>
+        <!--[if lt IE 7]>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <span class="fa-stack">
+                        <i class="fas fa-bookmark fa-stack-2x text-primary"></i>
+                        <i class="fas fa-tag fa-stack-1x fa-inverse"></i>
+                    </span>
+                    <small><a href="#" class="text-reset" title="{{ html.ribbon.promo[0].description }}">{{ html.ribbon.promo[0].description }}</a> <a href="#" class="text-reset">[ x ]</a></small>
+                </div>
+                <div class="col-md-6">
+                    <ul class="nav justify-content-end text-dark" id="ribbon">
+                        <li class="nav-item">
+                            <span class="nav-link text-reset" style="text-decoration:inherit;"><i class="fas fa-phone"></i>&nbsp;&nbsp;&nbsp;{{ html.footer.contact.phone }}</span>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-reset" style="text-decoration:inherit;" href="#livechat"><i class="fas fa-comments"></i>&nbsp;&nbsp;&nbsp;{{ html.sections.live_chat.button }}</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-reset" style="text-decoration:inherit;" href="#member"><i class="fas fa-user-circle"></i>&nbsp;&nbsp;&nbsp;Member Area</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top border border-left-0 border-right-0 py-0" id="navbar_main">
+            <div class="container">
+                <a class="navbar-brand py-0" href="/" style="max-width: 75%;"><img src="{{ html.brand_logo_url }}" class="img-fluid" alt="NiagaHoster"></a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarMain" aria-controls="navbarMain" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarMain">
+                    <ul class="navbar-nav mt-2 mt-lg-0 ml-auto">
+                        {% for nav in html.navs %}
+                        <li class="nav-item">
+                            <a class="nav-link" href="{{ nav.link }}">{{ nav.name }}</a>
+                        </li>
+                        {% endfor %}
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <section id="headline" class="jumbotron jumbotron-fluid pt-4 pb-5 border-bottom">
+            <div class="container">
+                <div class="row align-items-end">
+                    <div class="col-md-6">
+                        <h1 class="font-weight-bold">{{ html.headline.title }}</h1>
+                        <h3>{{ html.headline.subtitle }}</h3>
+                        <p class="lead">
+                            <ul class="fa-ul fa-ul-mod">
+                                {% for headlist in html.headline.list %}
+                                <li><span class="fa-li"><i class="fas fa-check-circle fa-lg text-success"></i></span>{{ headlist }}</li>
+                                {% endfor %}
+                            </ul>
+                        </p>
+                    </div>
+                    <div class="col-md-6 p-3 d-none d-sm-block">
+                        <img src="assets/svg/banner_php_hosting.svg" class="img-fluid float-right" alt="PHP Hosting Banner">
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="highlight_features" class="pt-4">
+            <div class="container text-center">
+                <div class="row row-cols-1 row-cols-md-3 mx-auto align-items-end">
+                    {% for feature in html.sections.hosting_features %}
+                    <div class="col mb-4">
+                        <div class="card border-0">
+                            <img src="{{ feature.icon_url }}" class="card-img-top align-middle mx-auto my-auto" alt="{{ item.name }}">
+                            <div class="card-body">
+                                <h6 class="card-title">{{ feature.name }}</h6>
+                            </div>
+                        </div>
+                    </div>
+                    {% endfor %}
+                </div>
+            </div>
+        </section>
+        <section id="hosting_packages" class="my-5">
+            <div class="container">
+                <h2 class="text-center font-weight-bold">{{ html.sections.hosting_packages.title }}</h2>
+                <h4 class="text-center mb-5">{{ html.sections.hosting_packages.subtitle }}</h4>
+                <div class="card-columns">
+                {% for package in prices.packages %}
+                {% if package.best_seller %}
+                    <div class="card text-center border-primary mx-0 mt-3">
+                        <img src="assets/svg/icon_bestseller.svg" class="bestseller">
+                        <div class="card-body text-white bg-primary border-bottom border-primary">
+                            <h4 class="card-title font-weight-bolder text-white">{{ package.name }}</h4>
+                {% else %}
+                    <div class="card text-center mx-0 mt-3">
+                        <div class="card-body border-bottom">
+                            <h4 class="card-title font-weight-bolder">{{ package.name }}</h4>
+                {% endif %}
+                            
+                        {% if package.price_discount == null %}
+                            {% set price = package.price|format_number(locale='id')|split('.') %}
+                            <h5 class="card-text">{{ "<span class='align-text-bottom'>%s</span> <strong><span class='font-bigger align-text-top'>%s</span><span class='align-text-bottom'>.%s</strong>/ %s</span>"|format(package.price_currency, price[0], price[1], package.price_per)|raw }}</h5>
+                        {% else %}
+                            {% set price = package.price_discount|format_number(locale='id')|split('.') %}
+                            <p class="card-text"><s>{{ "%s %s"|format(package.price_currency, package.price|format_number(locale='id'))|raw }}</s></p>
+                            <h5 class="card-text">{{ "<span class='align-text-bottom'>%s</span> <strong><span class='font-bigger align-text-top line-height-1'>%s</span><span class='align-text-bottom'>.%s</strong>/ %s</span>"|format(package.price_currency, price[0], price[1], package.price_per)|raw }}</h5>
+                        {% endif %}
+                        </div>
+                    {% if package.best_seller %}
+                        <div class="card-body bg-primary-darker text-white border-bottom border-primary-darker py-2">
+                    {% else %}
+                        <div class="card-body border-bottom py-2">
+                    {% endif %}
+                            <strong>{{ package.count_customer|format_number(locale='id') }}</strong> {{ package.count_customer_label }}
+                        </div>
+                        <div class="card-body">
+                            <ul class="card-text list-unstyled">
+                            {% for feature in package.features %}
+                                <li>{{ feature|raw }}</li>
+                            {% endfor %}
+                            </ul>
+                        </div>
+                        <div class="card-footer bg-white border-top-0">
+                            
+                        {% if package.best_seller %}
+                            <a href="#" class="btn btn-primary rounded-pill px-4"><strong>{{ html.sections.hosting_packages.button }}</strong></a>
+                        {% else %}
+                            <a href="#" class="btn btn-outline-secondary rounded-pill px-4"><strong>{{ html.sections.hosting_packages.button }}</strong></a>
+                        {% endif %}
+                        </div>
+                    </div>
+                {% endfor %}
+                </div>
+            </div>
+            <div id="php_limits" class="my-5">
+                <div class="container text-center">
+                    <h3>{{ html.sections.hosting_packages.php_limits.title }}</h3>
+                    <div class="row justify-content-md-center mt-4">
+                    {% for list in html.sections.hosting_packages.php_limits.list %}
+                        <div class="col-md-4">
+                            <ul class="list-group">
+                            {% for item in list %}
+                                <li class="list-group-item"><i class="fas fa-check-circle fa-lg text-success float-left"></i>{{ item }}</li>
+                            {% endfor %}
+                            </ul>
+                        </div>
+                    {% endfor %}
+                    </div>
+                </div>
+            </div>
+        </section>
+        <hr class="hr-short" />
+        <section id="hosting_includes" class="mt-5">
+            <div class="container text-center">
+                <h3>{{ html.sections.hosting_includes.title }}</h3>
+                <div class="row row-cols-1 row-cols-md-3">
+                    {% for item in html.sections.hosting_includes.includes %}
+                    <div class="col mb-4">
+                        <div class="card border-0">
+                            <img src="{{ item.icon_url }}" class="card-img-top mx-auto mt-5" alt="{{ item.name }}">
+                            <div class="card-body">
+                                <h5 class="card-title font-weight-bolder">{{ item.name }}</h5>
+                                <p class="card-text">{{ item.description }}</p>
+                            </div>
+                        </div>
+                    </div>
+                    {% endfor %}
+                </div>
+            </div>
+        </section>
+        <hr class="hr-short" />
+        <section id="supports_laravel" class="mt-5 border-bottom">
+            <div class="container">
+                <h3 class="text-center mb-3">{{ html.sections.supports_laravel.title }}</h3>
+                <div class="row">
+                    <div class="col-md-6 align-self-center mb-5">
+                        <p class="lead">{{ html.sections.supports_laravel.description }}</p>
+                        <ul class="fa-ul fa-ul-mod">
+                        {% for item in html.sections.supports_laravel.list %}
+                            <li><span class="fa-li"><i class="fas fa-check-circle fa-lg text-success"></i></span>{{ item|raw }}</li>
+                        {% endfor %}
+                        </ul>
+                        <p class="mb-4">
+                            <small>{{ html.sections.supports_laravel.note }}</small>
+                        </p>
+                        <a href="#" class="btn btn-primary btn-lg rounded-pill">{{ html.sections.supports_laravel.button }}</a>
+                    </div>
+                    <div class="col-md-6 align-self-end d-none d-sm-block">
+                        <img src="assets/svg/banner_laravel.svg" class="img-fluid" alt="Supports Laravel Framework">
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="php_modules"class="my-5">
+            <div class="container">
+                <h3 class="text-center mb-3">{{ html.sections.php_modules.title }}</h3>
+                <div class="row justify-content-center row-cols-1 row-cols-md-4 my-5">
+                {% for list in html.sections.php_modules.list %}
+                    <div class="col">
+                        <ul class="list-unstyled">
+                        {% for item in list %}
+                            <li>{{ item }}</li>
+                        {% endfor %}
+                        </ul>
+                    </div>
+                {% endfor %}
+                </div>
+                <div class="text-center">
+                    <a href="#" class="btn btn-outline-secondary btn-lg rounded-pill px-5"><strong>{{ html.sections.php_modules.button }}</strong></a>
+                </div>
+            </div>
+        </section>
+        <section id="linux_hosting" class="mt-5">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6 align-self-center my-5">
+                        <h2>{{ html.sections.linux_hosting.title }}</h2>
+                        <p class="mt-4 mb-5">{{ html.sections.linux_hosting.description|raw }}</p>
+                        <a href="#" class="btn btn-primary btn-lg rounded-pill">{{ html.sections.linux_hosting.button }}</a>
+                    </div>
+                    <div class="col-md-6 align-self-end d-none d-sm-block">
+                        <img src="assets/images/img_support.png" class="img-fluid" alt="Live Support">
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="share_page" class="bg-light">
+            <div class="container">
+                <div class="row py-3">
+                    <div class="col-md-7 align-self-center">
+                        <h6>{{ html.sections.share_page.title }}</h6>
+                    </div>
+                    <div class="col-md-5 sharethis-inline-share-buttons"></div>
+                </div>
+            </div>
+        </section>
+        <section id="live_chat" class="bg-primary py-5">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-9">
+                        <h2 class="text-white">{{ html.sections.live_chat.title|raw }}</h2>
+                    </div>
+                    <div class="col-md-3 border-left">
+                        <a href="#" class="btn btn-lg btn-outline-light rounded-pill float-right px-4"><i class="fas fa-comments fa-lg"></i> {{ html.sections.live_chat.button }}</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <footer class="bg-dark">
+            <div class="container">
+                <div class="row row-cols-1 row-cols-md-4 pt-5 pb-3">
+                    <div class="col mt-3 mb-5">
+                        <p class="font-weight-bolder text-white-50 text-uppercase">{{ html.footer.contact.title }}</p>
+                        <ul class="list-unstyled mb-3">
+                            <li>{{ html.footer.contact.phone }}</li>
+                            <li>{{ html.footer.contact.operational_day }}</li>
+                            <li>{{ html.footer.contact.operational_time }}</li>
+                        </ul>
+                        <ul class="list-unstyled">
+                        {% for item in html.footer.contact.address %}
+                            <li>{{ item }}</li>
+                        {% endfor %}
+                        </ul>
+                    </div>
+                    <div class="col mt-3 mb-5">
+                        <p class="font-weight-bolder text-white-50 text-uppercase">{{ html.footer.services.title }}</p>
+                        <ul class="list-unstyled">
+                        {% for nav in html.footer.services.navs %}
+                            <li><a href="{{ nav.link }}" class="text-reset">{{ nav.name }}</a></li>
+                        {% endfor %}
+                        </ul>
+                    </div>
+                    <div class="col mt-3 mb-5">
+                        <p class="font-weight-bolder text-white-50 text-uppercase">{{ html.footer.hosting.title }}</p>
+                        <ul class="list-unstyled">
+                        {% for nav in html.footer.hosting.navs %}
+                            <li><a href="{{ nav.link }}" class="text-reset">{{ nav.name }}</a></li>
+                        {% endfor %}
+                        </ul>
+                    </div>
+                    <div class="col mt-3 mb-5">
+                        <p class="font-weight-bolder text-white-50 text-uppercase">{{ html.footer.tutorial.title }}</p>
+                        <ul class="list-unstyled">
+                        {% for nav in html.footer.tutorial.navs %}
+                            <li><a href="{{ nav.link }}" class="text-reset">{{ nav.name }}</a></li>
+                        {% endfor %}
+                        </ul>
+                    </div>
+                    <div class="col mb-2">
+                        <p class="font-weight-bolder text-white-50 text-uppercase">{{ html.footer.about.title }}</p>
+                        <ul class="list-unstyled">
+                        {% for nav in html.footer.about.navs %}
+                            <li><a href="{{ nav.link }}" class="text-reset">{{ nav.name }}</a></li>
+                        {% endfor %}
+                        </ul>
+                    </div>
+                    <div class="col mb-2">
+                        <p class="font-weight-bolder text-white-50 text-uppercase">{{ html.footer.whyus.title }}</p>
+                        <ul class="list-unstyled">
+                        {% for nav in html.footer.whyus.navs %}
+                            <li><a href="{{ nav.link }}" class="text-reset">{{ nav.name }}</a></li>
+                        {% endfor %}
+                        </ul>
+                    </div>
+                    <div class="col mb-2">
+                        <p class="font-weight-bolder text-white-50 text-uppercase">{{ html.footer.newsletter.title }}</p>
+                        <form class="form-inline mb-2">
+                            <label class="sr-only" for="formNewsletterEmail">{{ html.footer.newsletter.placeholder }}</label>
+                            <input type="email" class="form-control form-control-lg rounded-pill" id="formNewsletterEmail" placeholder="{{ html.footer.newsletter.placeholder }}">
+
+                            <button type="submit" class="btn btn-primary btn-sm rounded-pill py-2" style="position: absolute; right: 17px;">{{ html.footer.newsletter.button }}</button>
+                        </form>
+                        <small class="text-white-50">{{ html.footer.newsletter.description }}</small>
+                    </div>
+                    <div class="col mb-2" style="margin-top: 2rem !important;">
+                    {% for item in html.footer.social_media.buttons %}
+                        <a href="{{ item.link }}" class="btn btn-lg btn-outline-light rounded-circle mr-4" style="width:56px;height:56px;"><i class="{{ item.icon }} mx-auto mt-2"></i></a>
+                    {% endfor %}
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-12">
+                        <p class="font-weight-bolder text-white-50 text-uppercase">{{ html.footer.payments.title }}</p>
+                    {% for item in html.footer.payments.icons %}
+                        <button type="button" class="btn btn-outline-light rounded-lg payment-icon mb-2 mr-2"><img src="{{ item }}" class="img-fluid"></button>    
+                    {% endfor %}
+                        <p class="text-white-50 my-4">{{ html.footer.payments.description }}</p>
+                    </div>
+                </div>
+                <hr/>
+                <div class="row pb-4">
+                    <div class="col-md-8">
+                        <p class="text-white-50">{{ html.footer.copyright.description|raw }}<br/>{{ html.footer.copyright.powered|raw }}</p>
+                    </div>
+                    <div class="col-md-4">
+                        <p class="text-right text-white-50">
+                            <a href="{{ html.footer.copyright.navs[0].link }}" class="text-reset">{{ html.footer.copyright.navs[0].name }}</a> | <a href="{{ html.footer.copyright.navs[1].link }}" class="text-reset">{{ html.footer.copyright.navs[1].name }}</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
+        <script src="https://kit.fontawesome.com/463e2fadbc.js" crossorigin="anonymous"></script>
+        <script type="text/javascript" src="https://platform-api.sharethis.com/js/sharethis.js#property=5f918a58d924480012e1d02b&product=inline-share-buttons" async="async"></script>
+    </body>
+</html>

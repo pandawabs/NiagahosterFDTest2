@@ -1,0 +1,5 @@
+.vscode/
+frontend-test/
+deploy/
+vendor/
+public/assets/images/mockup.png

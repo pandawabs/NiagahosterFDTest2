@@ -1,0 +1,364 @@
+{
+    "title": "NiagaHoster Test 2",
+    "brand_logo_url": "assets/images/logo_nh.png",
+    "ribbon": {
+        "promo": [
+            {
+                "description": "Gratis Ebook 9 Cara Cerdas Menggunakan Domain",
+                "link": "#"
+            }
+        ]
+    },
+    "navs": [
+        {
+            "name": "Hosting",
+            "link": "#hosting"
+        },
+        {
+            "name": "Domain",
+            "link": "#domain"
+        },
+        {
+            "name": "Server",
+            "link": "#server"
+        },
+        {
+            "name": "Website",
+            "link": "#website"
+        },
+        {
+            "name": "Afiliasi",
+            "link": "#affiliate"
+        },
+        {
+            "name": "Promo",
+            "link": "#promo"
+        },
+        {
+            "name": "Pembayaran",
+            "link": "#purchasing"
+        },
+        {
+            "name": "Review",
+            "link": "#review"
+        },
+        {
+            "name": "Kontak",
+            "link": "#contact"
+        },
+        {
+            "name": "Blog",
+            "link": "#blog"
+        }
+    ],
+    "headline": {
+        "title": "PHP Hosting",
+        "subtitle": "Cepat, handal, penuh dengan modul PHP yang Anda butuhkan",
+        "list": [
+            "Solusi PHP untuk performa query yang lebih cepat.",
+            "Konsumsi memori yang lebih rendah.",
+            "Support PHP 5.3, PHP 5.4, PHP 5.5, PHP 5.6, PHP 7",
+            "Fitur enkripsi IonCube dan Zend Guard Loaders"
+        ]
+    },
+    "sections": {
+        "hosting_features": [
+            {
+                "icon_url": "assets/images/logo_zendguard.png",
+                "name": "PHP Zend Guard Loader"
+            },
+            {
+                "icon_url": "assets/images/logo_composer.png",
+                "name": "PHP Composer"
+            },
+            {
+                "icon_url": "assets/images/logo_ioncube.png",
+                "name": "PHP ionCube Loader"
+            }
+        ],
+        "hosting_packages": {
+            "title": "Paket Hosting Singapura yang Tepat",
+            "subtitle": "Diskon 40% + Domain dan SSL Gratis untuk Anda",
+            "button": "Pilih Sekarang",
+            "php_limits": {
+                "title": "Powerful dengan Limit PHP yang Lebih Besar",
+                "list": [
+                    [
+                        "max execution time 300s",
+                        "max execution time 300s",
+                        "php memory limit 1024 MB"
+                    ],
+                    [
+                        "post max size 128 MB",
+                        "upload max filesize 128 MB",
+                        "max input vars 2500"
+                    ]
+                ]
+            }
+        },
+        "hosting_includes": {
+            "title": "Semua Paket Hosting Sudah Termasuk",
+            "includes": [
+                {
+                    "icon_url": "assets/svg/icon_php_allver.svg",
+                    "name": "PHP Semua Versi",
+                    "description": "Pilih mulai dari versi PHP 5.3 s/d PHP 7. Ubah sesuka Anda!"
+                },
+                {
+                    "icon_url": "assets/svg/icon_mysql.svg",
+                    "name": "MySQL Versi 5.6",
+                    "description": "Nikmati MySQL versi terbaru, tercepat dan kaya akan fitur."
+                },
+                {
+                    "icon_url": "assets/svg/icon_cpanel.svg",
+                    "name": "Panel Hosting cPanel",
+                    "description": "Kelola website dengan panel canggih yang familiar di hati Anda."
+                },
+                {
+                    "icon_url": "assets/svg/icon_garansi.svg",
+                    "name": "Garansi Uptime 99.9%",
+                    "description": "Data center yang mendukung kelangsungan website Anda 24/7."
+                },
+                {
+                    "icon_url": "assets/svg/icon_innodb.svg",
+                    "name": "Database InnoDB Unlimited",
+                    "description": "Jumlah dan ukuran database yang tumbuh sesuai kebutuhan Anda."
+                },
+                {
+                    "icon_url": "assets/svg/icon_mysql_remote.svg",
+                    "name": "Wildcard Remote MySQL",
+                    "description": "Mendukung s/d 25 max_user_connections dan 100 max_connections."
+                }
+            ]
+        },
+        "supports_laravel": {
+            "title": "Mendukung penuh Framework Laravel",
+            "description": "Tak perlu menggunakan dedicated server ataupun VPS yang mahal. Layanan PHP hosting murah kami mendukung penuh framework favorit Anda.",
+            "list": [
+                "Install Laravel <strong>1 klik</strong> dengan Softaculous Installer.",
+                "Mendukung ekstensi <strong>PHP MCrypt, phar, mbstring, json,</strong> dan <strong>fileinfo.</strong>",
+                "Tersedia <strong>Composer</strong> dan <strong>SSH</strong> untuk menginstal packages pilihan Anda."
+            ],
+            "note": "Nb. Composer dan SSH hanyan tersedia pada paket Personal dan Bisnis",
+            "button": "Pilih Hosting Anda"
+        },
+        "php_modules": {
+            "title": "Modul Lengkap untuk Menjalankan Aplikasi PHP Anda",
+            "list": [
+                ["IcePHP","apc","apcu","apm","ares","bcmath","bcompiler","big_int","bitset","bloomy","bz2_filter","clamav","coin_acceptor","crack","dba"],
+                ["http","huffman","idn","igbinary","imagick","imap","inclued","inotify","interbase","intl","ioncube_loader","ioncube_loader_4","jsmin","json","ldap"],
+                ["nd_pdo_mysql","oauth","oci8","odbc","opcache","pdf","pdo","pdo_dblib","pdo_firebird","pdo_mysql","pdo_odbc","pdo_pgsql","pdo_sqlite","pgsql","phalcon"],
+                ["stats","stem","stomp","suhosin","sybase_cf","sysvmsg","sysvsem","sysvshm","tidy","timezonedb","trader","translit","uploadprogress","uri_template","uuid"]
+            ],
+            "button": "Selengkapnya"
+        },
+        "linux_hosting": {
+            "title": "Linux Hosting yang Stabil dengan Teknologi LVE",
+            "description": "SuperMicro <strong>Intel Xeon 24-Cores</strong> server dengan RAM <strong>128 GB</strong> dan teknologi <strong>LVE CloudLinux</strong> untuk stabilitas server Anda. Dilengkapi dengan <strong>SSD</strong> untuk kecepatan <strong>MySQL</strong> dan caching, Apache load balancer berbasi LiteSpeed Technologies, <strong>CageFS</strong> security, <strong>Raid-10</strong> protection dan auto backup untuk keamanan website PHP Anda.",
+            "button": "Pilih Hosting Anda"
+        },
+        "share_page": {
+            "title": "Bagikan jika Anda menyukai halaman ini."
+        },
+        "live_chat": {
+            "title": "Perlu <strong>BANTUAN?</strong> Hubungi Kami : <strong>0274-5305505</strong>",
+            "button": "Live Chat"
+        }
+    },
+    "footer": {
+        "contact": {
+            "title": "Hubungi Kami",
+            "phone": "0274-5305505",
+            "operational_day": "Senin - Minggu",
+            "operational_time": "24 Jam Nonstop",
+            "address": [
+                "Jl. Palagan Tentara Pelajar No. 81 Jongkang, Sariharjo,",
+                "Ngaglik, Sleman",
+                "Daerah Istimewa Yogyakarta 55581"
+            ]
+        },
+        "services": {
+            "title": "Layanan",
+            "navs": [
+                {
+                    "name": "Domain",
+                    "link": "#domain"
+                },
+                {
+                    "name": "Shared Hosting",
+                    "link": "#sharedhosting"
+                },
+                {
+                    "name": "Cloud VPS Hosting",
+                    "link": "#cloudvps"
+                },
+                {
+                    "name": "Managed VPS Hosting",
+                    "link": "#managedvps"
+                },
+                {
+                    "name": "Web Builder",
+                    "link": "#webbuilder"
+                },
+                {
+                    "name": "Keamanan SSL / HTTPS",
+                    "link": "#securessl"
+                },
+                {
+                    "name": "Jasa Pembuatan Website",
+                    "link": "#buildwebsite"
+                },
+                {
+                    "name": "Program Afiliasi",
+                    "link": "#affiliate"
+                }
+            ]
+        },
+        "hosting": {
+            "title": "Service Hosting",
+            "navs": [
+                {
+                    "name": "Hosting Murah",
+                    "link": "#hostingmurah"
+                },
+                {
+                    "name": "Hosting Indonesia",
+                    "link": "#hostingindonesia"
+                },
+                {
+                    "name": "Hosting Singapura SG",
+                    "link": "#hostingsg"
+                },
+                {
+                    "name": "Hosting PHP",
+                    "link": "#hostingphp"
+                },
+                {
+                    "name": "Hosting Wordpress",
+                    "link": "#hostingwordpress"
+                }
+                ,
+                {
+                    "name": "Hosting Laravel",
+                    "link": "#hostinglaravel"
+                }
+            ]
+        },
+        "tutorial": {
+            "title": "Tutorial",
+            "navs": [
+                {
+                    "name": "Knowledgebase",
+                    "link": "#knowledgebase"
+                },
+                {
+                    "name": "Blog",
+                    "link": "#blog"
+                },
+                {
+                    "name": "Cara Pembayaran",
+                    "link": "#payment"
+                }
+            ]
+        },
+        "about": {
+            "title": "Tentang Kami",
+            "navs": [
+                {
+                    "name": "Tim Niagahoster",
+                    "link": "#team"
+                },
+                {
+                    "name": "Karir",
+                    "link": "#career"
+                },
+                {
+                    "name": "Events",
+                    "link": "#events"
+                },
+                {
+                    "name": "Penawaran & Promo Spesial",
+                    "link": "#promo"
+                },
+                {
+                    "name": "Kontak Kami",
+                    "link": "#contact"
+                }
+            ]
+        },
+        "whyus": {
+            "title": "Kenapa Pilih NiagaHoster?",
+            "navs": [
+                {
+                    "name": "Support Terbaik",
+                    "link": "#support"
+                },
+                {
+                    "name": "Garansi Harga Termurah",
+                    "link": "#price"
+                },
+                {
+                    "name": "Domain Gratis Selamanya",
+                    "link": "#domain"
+                },
+                {
+                    "name": "Datacenter Hosting Terbaik",
+                    "link": "#datacenter"
+                },
+                {
+                    "name": "Review Pelanggan",
+                    "link": "#review"
+                }
+            ]
+        },
+        "newsletter": {
+            "title": "Newsletter",
+            "placeholder": "Email",
+            "button": "Berlangganan",
+            "description": "Dapatkan promo dan konten menarik dari penyedia jasa hosting terbaik Anda."
+        },
+        "social_media": {
+            "buttons": [
+                {
+                    "icon": "fa fa-facebook",
+                    "link": "#facebook"
+                },
+                {
+                    "icon": "fa fa-twitter",
+                    "link": "#twitter"
+                },
+                {
+                    "icon": "fab fa-google-plus-g",
+                    "link": "#gplus"
+                }
+            ]
+        },
+        "payments": {
+            "title": "Pembayaran",
+            "icons": [
+                "assets/svg/icon_bca.svg",
+                "assets/svg/icon_mandiri.svg",
+                "assets/svg/icon_bni.svg",
+                "assets/svg/icon_visa.svg",
+                "assets/svg/icon_mastercard.svg",
+                "assets/svg/icon_atm_bersama.svg",
+                "assets/svg/icon_alto.svg"
+            ],
+            "description": "Aktivasi instan dengan e-Payment. Hosting dan domain langsung aktif!"
+        },
+        "copyright": {
+            "description": "Copyright &copy;2016 Niagahoster | Hosting powered by PHP7, CloudLinux, CloudFlare, BitNinja, and DC Biznet Technovillage Jakarta",
+            "powered": "Cloud VPS Murah powered by Webuzo Softaculous, Intel SSD and cloud computing technology",
+            "navs": [
+                {
+                    "name": "Syarat dan Ketentuan",
+                    "link": "#termcondition"
+                },
+                {
+                    "name": "Kebijakan Privasi",
+                    "link": "#privacy"
+                }
+            ]
+        }
+    }
+}

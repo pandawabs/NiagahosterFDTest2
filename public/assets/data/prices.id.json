@@ -1,0 +1,92 @@
+{
+    "packages" : [
+        {
+            "name": "Bayi",
+            "price_currency": "Rp",
+            "price": 19900,
+            "price_discount": 14900,
+            "price_per": "bln",
+            "best_seller": false,
+            "count_customer": 938,
+            "count_customer_label": "Pengguna Terdaftar",
+            "features": [
+                "<strong>0.5X RESOURCE POWER</strong>",
+                "<strong>500 MB</strong> Disk Space",
+                "<strong>Unlimited</strong> Bandwidth",
+                "<strong>Unlimited</strong> Databases",
+                "<strong>1</strong> Domain",
+                "<strong>Instant</strong> Backup",
+                "<strong>Unlimited SSL</strong> Gratis Selamanya"
+            ]
+        },
+        {
+            "name": "Pelajar",
+            "price_currency": "Rp",
+            "price": 46900,
+            "price_discount": 23450,
+            "price_per": "bln",
+            "best_seller": false,
+            "count_customer": 4168,
+            "count_customer_label": "Pengguna Terdaftar",
+            "features": [
+                "<strong>1X RESOURCE POWER</strong>",
+                "<strong>Unlimited</strong> Disk Space",
+                "<strong>Unlimited</strong> Bandwidth",
+                "<strong>Unlimited</strong> POP3 Email",
+                "<strong>Unlimited</strong> Databases",
+                "<strong>10</strong> Addon Domains",
+                "<strong>Instant</strong> Backup",
+                "<strong>Domain Gratis</strong> Selamanya",
+                "<strong>Unlimited SSL</strong> Gratis Selamanya"
+            ]
+        },
+        {
+            "name": "Personal",
+            "price_currency": "Rp",
+            "price": 58900,
+            "price_discount": 38900,
+            "price_per": "bln",
+            "best_seller": true,
+            "count_customer": 10017,
+            "count_customer_label": "Pengguna Terdaftar",
+            "features": [
+                "<strong>2X RESOURCE POWER</strong>",
+                "<strong>Unlimited</strong> Disk Space",
+                "<strong>Unlimited</strong> Bandwidth",
+                "<strong>Unlimited</strong> POP3 Email",
+                "<strong>Unlimited</strong> Databases",
+                "<strong>Unlimited</strong> Addon Domains",
+                "<strong>Instant</strong> Backup",
+                "<strong>Domain Gratis</strong> Selamanya",
+                "<strong>Unlimited SSL</strong> Gratis Selamanya",
+                "<strong>Private</strong> Name Server",
+                "<strong>SpamAssasin</strong> Mail Protection"
+            ]
+        },
+        {
+            "name": "Bisnis",
+            "price_currency": "Rp",
+            "price": 109900,
+            "price_discount": 65900,
+            "price_per": "bln",
+            "best_seller": false,
+            "count_customer": 3552,
+            "count_customer_label": "Pengguna Terdaftar",
+            "features": [
+                "<strong>3X RESOURCE POWER</strong>",
+                "<strong>Unlimited</strong> Disk Space",
+                "<strong>Unlimited</strong> Bandwidth",
+                "<strong>Unlimited</strong> POP3 Email",
+                "<strong>Unlimited</strong> Databases",
+                "<strong>Unlimited</strong> Addon Domains",
+                "<strong>Magic Auto</strong> Backup & Restore",
+                "<strong>Domain Gratis</strong> Selamanya",
+                "<strong>Unlimited SSL</strong> Gratis Selamanya",
+                "<strong>Private</strong> Name Server",
+                "<strong>Prioritas</strong> Layanan Support",
+                "<span class='text-primary'>&#9733;&#9733;&#9733;&#9733;&#9733;</span>",
+                "<strong>SpamExpert</strong> Pro Mail Protection"
+            ]
+        }
+    ]
+}

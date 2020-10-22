@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   id="svg1345"
+   version="1.1"
+   viewBox="0 0 135.46667 135.46667"
+   height="512"
+   width="512">
+  <defs
+     id="defs1339" />
+  <metadata
+     id="metadata1342">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     transform="translate(0,-161.53333)"
+     id="layer1">
+    <g
+       transform="matrix(0.62574186,0,0,0.62574186,-4.341936,152.6915)"
+       id="g2031">
+      <path
+         id="path907"
+         style="fill:#004f27;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:0.03527778"
+         d="M 33.538581,160.09047 H 9.6096714 v 67.87091 H 33.538581 v -67.87091" />
+      <path
+         id="path909"
+         style="fill:#004f27;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:0.03527778"
+         d="m 220.75775,40.717527 v -23.92891 h -67.87092 v 23.92891 h 67.87092" />
+      <path
+         id="path911"
+         style="fill:#00b359;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:0.03527778"
+         d="M 9.6096714,227.96138 220.75775,16.816837 l -0.0282,-0.0282 h -74.95822 c -4.07458,0 -7.98336,1.61925 -10.86555,4.50144 L 14.111111,142.08469 c -2.88219,2.88219 -4.5014396,6.79097 -4.5014396,10.86555 v 75.01114" />
+      <text
+         xml:space="preserve"
+         style="font-style:normal;font-weight:normal;font-size:29.12661934px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0.15170114"
+         x="-98.134087"
+         y="149.3465"
+         id="text2024"
+         transform="rotate(-45.153613)"><tspan
+           id="tspan2022"
+           x="-98.134087"
+           y="149.3465"
+           style="font-style:normal;font-variant:normal;font-weight:900;font-stretch:normal;font-family:Roboto;-inkscape-font-specification:'Roboto Heavy';fill:#ffffff;stroke-width:0.15170114">BEST SELLER!</tspan></text>
+    </g>
+  </g>
+</svg>
